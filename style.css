@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #071718;
+  background-image: url("images/pizza.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.headline {
+  font-size: 40px;
+  font-family: "Caesar Dressing", cursive;
+  text-shadow: 0 0 8px black, 0 0 10px black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+.greetingBox {
+  background-color: #7c9ba6;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  padding: 16px;
+  width: 400px;
+  line-height: 20px;
+  align-self: center;
+}
+
+.pizzaForm,
+.options,
+.amountOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.amountLabel {
+  margin: 5px;
+}
+
+.select {
+  font-family: "Caesar Dressing", cursive;
+  font-size: 30px;
+  padding: 5px;
+  color: white;
+  text-shadow: 0 0 8px black, 0 0 10px black;
+}
+
+.whiteText {
+  text-shadow: 0 0 2px black;
+  color: white;
+}
+
+.amountInput {
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.options {
+  padding: 10px;
+  background-color: #7c9ba6;
+  border: 2px solid black;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 10px black;
+}
+
+.radioOption {
+  display: inline;
+  vertical-align: text-bottom;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 6px;
+  border: 4px solid black;
+  border-radius: 16px;
+  user-select: none;
+  background-color: white;
+  color: black;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.pizza {
+  text-shadow: 0 0 2px black;
+  font-weight: bolder;
+}
+
+.green {
+  color: #9ecb3c;
+}
+
+.orange {
+  color: #ff9f00;
+}
+
+.red {
+  color: #ff4136;
+}
+
+.foot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

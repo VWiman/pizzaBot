@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzabot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="container"><h1 class="headline">PizzaBot says:</h1></header>
+    <main>
+      <div class="container">
+        <div class="greetingBox">
+          <div id="greetingText" class="whiteText"></div>
+        </div>
+        <form action="" id="form" class="pizzaForm">
+          <fieldset class="options">
+            <legend>
+              <h2 id="select" class="select"></h2>
+            </legend>
+            <div class="radioOption">
+              <label for="pizzaOne" id="pizzaOneLabel"></label>
+              <input
+                type="radio"
+                name="pizza"
+                id="pizzaOne"
+                value="vegetarian"
+                onclick="checkOrderName(vegetarian)" />
+            </div>
+            <div class="radioOption">
+              <label for="pizzaTwo" id="pizzaTwoLabel"></label>
+              <input
+                type="radio"
+                name="pizza"
+                id="pizzaTwo"
+                value="hawaiian"
+                onclick="checkOrderName(hawaiian)" />
+            </div>
+            <div class="radioOption">
+              <label for="pizzaThree" id="pizzaThreeLabel"></label>
+              <input
+                type="radio"
+                name="pizza"
+                id="pizzaThree"
+                value="pepperoni"
+                onclick="checkOrderName(pepperoni)" />
+            </div>
+            <div class="amountOption">
+              <label for="amount" id="amountLabel" class="amountLabel"></label>
+              <input
+                type="number"
+                name="amount"
+                id="amount"
+                value="0"
+                min="1"
+                max="999"
+                class="amountInput" />
+            </div>
+            <button type="button" id="submit" onclick="order()" class="btn">
+              Send order!
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer class="foot whiteText"><p>Background image by ChatGPT</p></footer>
+    <script src="./code/pizzabot.js"></script>
+  </body>
+</html>
